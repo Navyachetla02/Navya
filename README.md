@@ -1,2 +1,0 @@
-# Navya
-Bsc cs
