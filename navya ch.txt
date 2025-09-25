@@ -1,0 +1,4 @@
+Name:Navya
+Course:Bsc computer science
+Section:Bsc c
+Suc no:2348390287
