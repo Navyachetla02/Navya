@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Food Delivery</title>
+<style>
+  /* Global styles for the body */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+
+  /* Header styles */
+  header {
+    background-color: #ff5722; /* A vibrant color often used for food delivery */
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  /* Navigation bar styles */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  /* Main content area */
+  .container {
+    padding: 2rem;
+  }
+
+  h1, h2 {
+    color: #333;
+  }
+
+  /* Styles for the food item cards */
+  .food-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .food-item:hover {
+    transform: translateY(-5px);
+  }
+
+  .food-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .item-details {
+    flex-grow: 1;
+  }
+
+  .item-details h3 {
+    margin: 0 0 0.5rem;
+    color: #ff5722;
+  }
+
+  .item-details p {
+    margin: 0 0 1rem;
+    color: #666;
+  }
+
+  .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .add-to-cart-btn {
+    background-color: #4CAF50; /* A green color for a call to action */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .add-to-cart-btn:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>Foodie Delivery 🍔</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Restaurants</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">My Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Featured Dishes</h2>
+    
+    <div class="food-item">
+      <img src="https://via.placeholder.com/150" alt="Delicious Burger">
+      <div class="item-details">
+        <h3>Classic Cheeseburger</h3>
+        <p>Juicy beef patty with melted cheddar, lettuce, and tomato on a brioche bun.</p>
+        <span class="price">$12.50</span>
+      </div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+
+    <div class="food-item">
+      <img src="https://via.placeholder.com/150" alt="Pepperoni Pizza">
+      <div class="item-details">
+        <h3>Pepperoni Passion Pizza</h3>
+        <p>A classic pizza topped with generous slices of pepperoni and mozzarella.</p>
+        <span class="price">$18.00</span>
+      </div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+  </div>
+
+</body>
+</html>
